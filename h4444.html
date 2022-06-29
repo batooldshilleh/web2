@@ -64,6 +64,14 @@
         window.onload=function (){
             init2();
         }
+           //لبودي اللي بشوف فيها الاليمنت ، الويندوز اللي هي كل الشاشة
+        function show(){
+            // let x= event.clientX;
+            // let y= event.clientY;
+            let x= event.offsetX;
+            let y =event.offsetY;
+            document.getElementById("sh").innerText="("+x+","+y+")";
+        }
     </script>
 </head>
 <body onload="init()">
