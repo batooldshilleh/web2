@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="web9.js"></script>
+    <script>
+        function bigim(i){
+            i.style.width="500px";
+        }
+        function smallim(i){
+            i.style.width="100px";
+        }
+        let shf=0;
+
+        function sh_h_p(){
+            if (shf==0){
+            document.getElementById('sh').style.display="block";//.visbelety = show
+            shf=1;
+            document.getElementById('3').innerText="hide info";
+            }
+            else{
+                document.getElementById('sh').style.display="none";
+                document.getElementById('3').innerText="show info"; //.visbelety =hidden
+                shf=0;
+            }
+            }
+            //لفيزيبال بكون الاشي محجوز محله حتى وهو مش ظاهر
+        // الاراي في الجافا نفسها الستاك و الكيو الكل بالكل اسم الله
+    </script>
+</head>
+<body onload="alert('welcome to ouer paje')"><!--لما البيج تحمل  مرات بتتأخر لأنو في اشياء بتتأخر لتعمل لود -->
+<div>
+    <img src="6354.jpg" width="100px" onmouseover="bigim(this)" onmouseout="smallim(this)">
+</div>
+<!--        <script type="text/javascript">-->
+<!--            let x=55;-->
+<!--            x=x+3;-->
+<!--            document.write(x);-->
+<!--            document.write('<br>');-->
+<!--            document.write('('+screen.width+','+screen.height+')'+'<br>');-->
+<!--        </script>-->
+<button id="1"  onclick="testt()">
+    show
+</button>
+<h1 id="2" on>some text</h1>
+<button id="3" onclick="sh_h_p()">show info</button>
+<p id="sh" style="display: none">
+    iiiiiiiiiiiijjjjjjjjjjjjjjjuuuuuuuuuuuuuuulllllllllllllllllmmmmmmmmmmmmmmmmmnnnnnnnnnnnnnnnnnnnn
+</p>
+</body>
+</html>

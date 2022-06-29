@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div.css3{
+            width: 600px;
+            height: 400px;
+            border: double red 3px;
+            background: rgba(200,200,20,0.6);
+            border-radius: 40px 150px 20px 60px;/* بنقدر نستعمله لجهه وحدةاو لكل الجهات*/
+            box-shadow: black 4px 2px 10px;/* -6px -4px to left and top*/
+            margin-bottom: 10px;
+            background-image: linear-gradient(30deg,white,orange,darkmagenta);
+        }
+
+        p.pint{
+            text-align: center;
+            font-size: 15pt;
+            color: white;
+            font-weight: bold;
+            text-shadow: blue 0px 0px 5px , red 0px 0px 10px;
+        }
+        div.a{
+            width:800px;
+            height: 200px;
+            background-color: white;
+            border: solid black 2px;
+
+        }
+        div.aa{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation-name: mov ;
+            animation-duration: 3s;
+            position: relative;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes mov {
+            0%{background-color: #392977;left: 0px }
+            50%{background-color: darkmagenta ; left: 375px}
+            100%{background-color: blue ;
+                left: 750px;}
+
+        }
+        span#m:hover{
+            display: inline-block;
+            transform: translate(20px,30px) scale(3.5) rotate(45deg) skewX(10deg) ;
+            transition-duration: 5s;
+        }
+
+        /* زمان لما ما كان مدعوم كانو يعملو اشي كيت عشان يعرفوا على البراوزرات*/
+    </style>
+    <script type="text/javascript">
+        function btnshow(){
+           console.document.getElementById('t').value
+        }
+    </script>
+</head>
+<body>
+<div class="css3">
+      <p class="pint"> batool shilleh manar mohamed rahaf nasralah </p>
+</div>
+<div CLASS="a">
+    <div class="aa"></div>
+</div>
+<div>
+    <p class="tt">ttttttt<span id="m">mmmmmmmmm</span>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+        ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+        ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+        ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br></p>
+</div>
+
+<!--
+الفيكتور ايمج تخزن ككود قد ما أكبر و قد ما اصغر بتظل منيحة ما بصير عندي بيكسلايزيشن
+esp ,cvg
+-->
+<input type="text" id="t">
+<br>
+<button id="1" onclick="alert('button1')">
+    show
+</button>
+
+<button id="2" >
+    show2
+</button>
+
+<button id="3">
+    show3
+</button>
+<button id="tt" onclick="alert(document.getElementById('t').value)">
+    show text
+</button>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function init(){
+          //  let v="55";
+          //  alert(v+6)
+          //  alert(Number(v)+6)
+           //// let w="(v>3)?9:2"
+            //alert((w));
+           // alert(eval(w));//بتنفذ الكود حتى لو كان نص
+           // let msg="some text with illegal chars gor url";
+           // let emsg=escape(msg);
+          //  alert(emsg);//تعطي اسكي كود
+            //alert(unescape(emsg));//بتعطيني العادي مش الاسكي
+           // alert(sum(2,3,8));
+           // alert(sum(5,6,8,3,7))//باخد اول ثلاثة
+           // alert(sum(2,3))//بعطي نت انمبر
+            //لو كان الفنكشن دون براميتار و نديت عليه مع براميتار
+            //sum()
+            //sum(3,5,6)
+            //عشان نوصل للبارميتار
+            //let w=0;
+            //for(let i=0;i<argument.length;i++)
+            // w+=argument[i];
+            //return w
+            //alert(sume(1,2,3,4,5))
+        }
+        function sum(x,y,z){
+            w=x+y+z;
+            return w;
+        }
+        function sume(){
+            let v=0;
+            for(let i=0;i<arguments.length;i++){
+                v+=arguments[i];
+            }
+            return v;
+        }
+
+    </script>
+    <script>
+        function paraclick(){
+            let srcpara=event.currentTarget;
+            //alert(srcpara.id);//هيك بعرف الاي دي للي استدعاه
+            srcpara.style.backgroundColor="rad";
+        }
+        //شان انفذ فنكشن لازم يكون انونوماس دون اسم او ارو فنكشن
+        //لارو فنكشن
+        //windows.onlode=>{ init2();}
+        function $(x) {return document.getElementById(x)}
+        function init2(){
+            //   document.getElementById("p1").addEventListener("click",paraclick(),false);
+            // document.getElementById("p3").addEventListener("click",paraclick(),false);
+            // document.getElementById("p2").addEventListener("click",paraclick(),false);
+            // document.getElementById("p4").addEventListener("click",paraclick(),false);
+            for(let i=1;i<5;i++){
+                document.getElementById("p"+i).addEventListener("click",paraclick(),false);
+            }
+            //$("p1");
+        }
+        window.onload=function (){
+            init2();
+        }
+    </script>
+</head>
+<body onload="init()">
+<p>ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+
+<!--    <script>-->
+<!--        document.write("hi");-->
+<!--        document.write("<b> hi</b>")-->
+<!--        document.write("hi".bold());-->
+<!--        document.write("hi".link("www.facebook.com"));-->
+
+<!--    </script>-->
+
+<p id="p1" onclick="paraclick()">ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+</p>
+<p id="p2" onclick="paraclick()">ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+</p>
+<p id="p3" onclick="paraclick()">ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+</p>
+<p id="p4" onclick="paraclick()">ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt<br>
+</p>
+</body>
+</html>,
